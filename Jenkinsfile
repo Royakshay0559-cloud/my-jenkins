@@ -1,7 +1,6 @@
 pipeline {
     agent any
-
-    stages {
+    
         stage('Clone Repo') {
             steps {
                 git 'https://github.com/<Royakshay0559>/jenkins-demo.git'
