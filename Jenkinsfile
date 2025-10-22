@@ -1,11 +1,13 @@
 pipeline {
     agent any
-    
+
+    stages {
         stage('Clone Repo') {
-    steps {
-        git 'https://github.com/Royakshay0559-cloud/my-jenkins.git'
-    }
-}
+            steps {
+                git 'https://github.com/<Royakshay0559>/jenkins-demo.git'
+
+            }
+        }
         stage('Build') {
             steps {
                 echo 'Building the project...'
